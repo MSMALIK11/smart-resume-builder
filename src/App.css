@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blue{
+  color: blueviolet;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shadow{
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-wraper{
+  background-color:#f3f2f1;
+  height: 70vh;
+
+
+}
+.banner h1{
+ font-size:4.5rem;
+ font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.right img{
+  width: 350px;
+}
+
+.title{
+  font-size: 4rem;
+  margin: 1rem 0;
+  text-align: center;
+
+}
+
+.title p
+{
+  border-bottom: 0.2rem solid red;
+  display: inline;
+  position: relative;
+}
+.title p:before{
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  bottom: -5px;
+  left: 50%;
+  transform: rotate(45deg);
+
+}
+
+.Box{
+  display: flex;
+justify-content: space-between;
+padding: 2rem 10rem;
+
+}
+
+.colors{
+  display: flex;
+  gap: 1rem;
+align-items: center;
+
+}
+.color-tag{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+display: block;
+
+}
+
+.download-btn{
+  background-color: rgba(9, 163, 235, 0.671);
+border: none;
+padding: 1rem 2rem;
+color: #fff;
+border-radius: 0rem 1rem 2rem 2rem;
+
+}
+
+.wraper{
+  display: flex;
+align-items: center;
+justify-content: center;
+margin: 2rem 0;
+}
+
+.container{
+  min-width:45.5rem;
+  min-height: 45.5rem;
+  display: flex;
+  flex-direction:column;
+
+  gap:2rem;
+
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0,0,0,0.12);
+
+}
+
+.header{
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+  transition: all 0.4s;
+}
+.link{
+  font-size: 1.4rem;
+  font-weight:bold;
+  letter-spacing: 0.2rem;
+
+  color: #111;
+  cursor: pointer;
+  border-bottom: 0.2rem  solid transparent;
+  padding: 1rem;
+  transition: all 0.4s;
+}
+
+.link.active{
+  color: #239ce2;
+  border-bottom: 0.2rem solid #239ce2;
+}
+
+
+.body{
+
+  padding: 0 3rem;
+}
+.unset{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.row{
+display: flex;
+gap: 10rem;
+margin: 1rem 0;
+}
+
+.column{
+  display: flex;
+  flex-direction:column;
+  gap: 0.5rem;
 }

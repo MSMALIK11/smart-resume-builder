@@ -1,0 +1,31 @@
+.input-container{
+    display: flex;
+flex-direction: column;
+gap: 0.5rem;
+width: 100%;
+
+}
+label{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+input{
+    border:0.1rem solid #eeeeee;
+    outline: none;
+padding: 1rem 1.2rem;
+border-radius: 0.5rem;
+width: 100%;
+}
+input:hover{
+    border-bottom: 0.1rem solid #adadad;
+}
+input:focus{
+    border-bottom: 0.1rem solid #239ce2;
+}
+
+label{
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
